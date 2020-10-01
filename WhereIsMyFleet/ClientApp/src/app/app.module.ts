@@ -28,6 +28,7 @@ import { AgmCoreModule } from '@agm/core';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: DronesComponent, pathMatch: 'full' },
+      { path: 'add', component: AddComponentComponent, pathMatch: 'full' },
     ]),
     ApiModule,
     ApiModule.forRoot(apiConfigFactory),

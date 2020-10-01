@@ -1,1 +1,15 @@
-<p>add-component works!</p>
+<h1>Add new drone</h1>
+
+<div>
+  <input matInput [(ngModel)]="name" placeholder="Drone Name" />
+
+  <input matInput [(ngModel)]="latitude" type="number" placeholder="Latitude" />
+
+  <input
+    matInput
+    [(ngModel)]="longitude"
+    type="number"
+    placeholder="Longitude"
+  />
+  <button (click)="addDrone()">Add</button>
+</div>
