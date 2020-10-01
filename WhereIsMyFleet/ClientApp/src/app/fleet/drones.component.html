@@ -1,0 +1,5 @@
+<h1>Hello, world!</h1>
+<p>Welcome to your new single-page application, built with:</p>
+  <agm-map *ngIf="markers" [latitude]="markers[0].latitude" [longitude]="markers[0].longitude">
+    <agm-marker *ngFor="let marker of markers" [latitude]="marker.latitude" [longitude]="marker.longitude"></agm-marker>
+  </agm-map>
